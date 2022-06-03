@@ -1,3 +1,3 @@
 import amazonCoin from './AmazonCoin.json';
-export const amazonCoinAddress = '0x6f67356e2dBCE24967Aa6CF9246f64A97cBD29f3';
+export const amazonCoinAddress = '0x98F8c1cFC9D12084c884a109698DdE5F37732e19';
 export const amazonAbi = amazonCoin.abi;
