@@ -18,7 +18,7 @@ const Sidebar = () => {
     profilePic: `rounded-3xl object-cover`,
     welcome: ` text-md mb-2 font-bold text-2xl text-white`,
     walletAddress: `text-xl flex w-full justify-center font-extrabold mb-4`,
-    menu: `flex flex-col w-full h-full px-10 gap-10`,
+    menu: `flex flex-col w-full h-full px-10 gap-10 ml-[10px]`,
     menuItem: `flex items-center text-lg font-bold cursor-pointer gap-2`,
     amazonLogo: `mr-4 flex object-cover`,
     companyName: `text-lg font-bold flex flex-1 pl-10 items-center mt-[20px]`,

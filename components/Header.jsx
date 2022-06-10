@@ -21,10 +21,9 @@ const Header = () => {
     search: `p-[25px] mr-[30px] w-[400px] h-[40px] bg-white rounded-full shadow-lg flex flex items-center border border-black`,
     searchInput: `bg-transparent focus:outline-none border-none flex-1 items-center flex`,
     menu: `flex items-center gap-6`,
-    menuItem: `flex items-center text-md font-bold cursor-pointer`,
+    menuItem: `flex items-center text-md font-bold cursor-pointer ml-[20px]`,
     coins: `ml-[10px]`,
   };
-
   const { balance, buyTokens, getBalance } = useContext(AmazonContext);
   const { openModal, isModalOpen, closeModal } = useModal();
   return (

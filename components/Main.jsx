@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react'
-import { AmazonContext } from '../context/AmazonContext'
+import React, { useContext, useEffect } from 'react';
+import { AmazonContext } from '../context/AmazonContext';
 
-import Cards from './Cards'
-import Featured from './Featured'
-import Header from './Header'
+import Cards from './Cards';
+import Featured from './Featured';
+import Header from './Header';
 
 const Main = () => {
   const styles = {
@@ -11,8 +11,8 @@ const Main = () => {
     recentTitle: `text-2xl font-bold text-center mb-[20px] text-center mt-[40px]`,
     recentTransactionsList: `flex flex-col`,
     transactionCard: `flex justify-between mb-[20px] p-[30px] bg-[#42667e] text-white rounded-xl shadow-xl font-bold gap-[20px] text-xl`,
-  }
-  const { recentTransactions } = useContext(AmazonContext)
+  };
+  const { recentTransactions } = useContext(AmazonContext);
 
   return (
     <div className={styles.container}>
@@ -24,7 +24,7 @@ const Main = () => {
       )}
       {recentTransactions &&
         recentTransactions.map((transaction, index) => {
-          console.log(transaction)
+          console.log(transaction);
           return (
             <div key={index} className={styles.recentTransactionsList}>
               <div className={styles.transactionCard}>
@@ -34,7 +34,7 @@ const Main = () => {
                   Hash:{' '}
                   <a
                     target={'_blank'}
-                    rel='noopener noreferrer'
+                    rel="noopener noreferrer"
                     href={`https://rinkeby.etherscan.io/tx/${transaction.attributes.hash}`}
                   >
                     {transaction.attributes.hash.slice(0, 10)}
@@ -43,10 +43,10 @@ const Main = () => {
                 <p>Gas: {transaction.attributes.gas}</p>
               </div>
             </div>
-          )
+          );
         })}
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
